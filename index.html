@@ -14,356 +14,439 @@
     <ul class="tabs">
         <li data-tab-target="#tracker" class="active tab">Tracker</li>
         <li data-tab-target="#samples" class="tab">Samples</li>
-        <li data-tab-target="#record" class="tab">Record</li>
         <li data-tab-target="#export" class="tab">Export</li>
     </ul>
 
     <div class="tab-content">
         <div id="tracker" data-tab-content class="active">
-            <h1>Tracker</h1>
-            <p>It's tracker time!</p>
+            <!--<h1>Tracker</h1>
+            <p>It's tracker time!</p>-->
             <div class = "container">
-                <button class = "button" name = "button0">
+                <button class = "button">
                     <span class = "button_icon">
                         <ion-icon name="play-outline"></ion-icon>
                     </span>
                 </button>
 
-                <button class = "button" name = "button1">
+                <button class = "button">
                     <span class = "button_icon">
                         <ion-icon name="stop-outline"></ion-icon>
                     </span>
                 </button>
 
-                <button class = "button" name = "button2">
+                <button class = "button">
                     <span class = "button_icon">
                         <ion-icon name="pause-outline"></ion-icon>
                     </span>
                 </button>
 
-                <button class = "button" name = "button3">
+                <button class = "button">
                     <span class = "button_icon">
                         <ion-icon name="play-skip-back-circle-outline"></ion-icon>
                     </span>
                 </button>
 
-                <button class = "button" name = "button4">
+                <button class = "button">
                     <span class = "button_icon">
                         <ion-icon name="play-skip-forward-circle-outline"></ion-icon>
                     </span>
                 </button>
 
-                <button class = "button" name = "button5">
+                <button class = "button">
                     <span class = "button_icon">
-                        <ion-icon name="ellipse-outline"></ion-icon>
+                        <ion-icon name="ellipse"></ion-icon>
                     </span>
                 </button>
 
+            </div>
+            <div class = "content-table">
+                <div>
+                    <a href="https://www.cj-wade.com">
+                    <button class = "content-graph">
+                        <span class = "button_icon">
+                            <ion-icon name="megaphone-outline" size = "large"></ion-icon>
+                            
+                        </span>
+                    </button>
+                    </a>
+                    <button class = "content-graph">
+        
+                        <span class = "button_icon">
+                            <ion-icon name="refresh-outline" size = "large" rotation = "90"></ion-icon>
+                        </span>
+        
+                    </button>
+                    <button class = "content-graph">
+        
+                        <span class = "button_icon">
+                            <ion-icon name="square-outline" size = "large"></ion-icon>
+                        </span>
+        
+                    </button>
+                    <button class = "content-graph">
+        
+                        <span class = "button_icon">
+                            <ion-icon name="triangle-outline" size = "large"></ion-icon>
+                        </span>
+        
+                    </button>
+                    <button class = "content-graph">
+        
+                        <span class = "button_icon">
+                            <ion-icon name="close-circle-outline" size = "large"></ion-icon>
+                        </span>
+        
+                    </button>
+                    <button class = "content-graph">
+        
+                        <span class = "button_icon">
+                            <ion-icon name="close-circle-outline" size = "large"></ion-icon>
+                        </span>
+        
+                    </button>
+                    <button class = "content-graph">
+        
+                        <span class = "button_icon">
+                            <ion-icon name="close-circle-outline" size = "large"></ion-icon>
+                        </span>
+        
+                    </button>
+                    <button class = "content-graph">
+                        <span class = "button_icon">
+        
+                            <ion-icon name="close-circle-outline" size = "large"></ion-icon>
+                        </span>
+        
+                    </button>
+                    <button class = "content-graph">
+        
+                        <span class = "button_icon">
+                            <ion-icon name="close-circle-outline" size = "large"></ion-icon>
+                        </span>
+        
+                    </button>
+                </div>
+        
+                <table class = "content-voices">
+                    <h1>Player</h1>
+                    <thead>
+                        <tr>
+                            <th>Notes</th>
+                            <th> Voice 1 </th>
+                            <th> Voice 2 </th>
+                            <th> Voice 3 </th>
+                            <th> Voice 4 </th>
+                            <th> Voice 5 </th>
+                            <th> Voice 6 </th>
+                            <th> Voice 7 </th>
+                            <th> Voice 8 </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>C</td>
+                            <td>D</td>
+                            <td>E</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr class = "active-row">
+                            <td>02</td>
+                            <td>D</td>
+                            <td>E</td>
+                            <td>F</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>E</td>
+                            <td>F</td>
+                            <td>G</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td>F</td>
+                            <td>G</td>
+                            <td>A</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>05</td>
+                            <td>G</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>06</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>C</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>07</td>
+                            <td>B</td>
+                            <td>C</td>
+                            <td>D</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>08</td>
+                            <td>C</td>
+                            <td>D</td>
+                            <td>E</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
             </div>
         </div>
         
         <div id="samples" data-tab-content>
-            <h1>Samples</h1>
-            <p>Sample Editing Suite</p>
+            <!--<h1>Samples</h1>
+            <p>Sample Editing Suite</p>-->
             <div class = "container">
-                <button class = "button" name = "button0">
+                <div class = "file-upload">
+                    <input class = "file-upload__input" type="file" name = "myFile[]" id = "myFile"  multiple>
+                        <button class = "file-upload__button" type = "button" id = "button0">
+                            <span class = "button_icon">
+                                <span class = "file-upload__label">
+                                    <ion-icon name="cloud-upload-outline"></ion-icon>
+                                </span>
+                            </span>
+                        </button>
+                </div>
+
+                <button class = "button">
                     <span class = "button_icon">
-                        <ion-icon name="play-outline"></ion-icon>
+                        <ion-icon name="save-outline"></ion-icon>
                     </span>
                 </button>
-
-                <button class = "button" name = "button1">
-                    <span class = "button_icon">
-                        <ion-icon name="stop-outline"></ion-icon>
-                    </span>
-                </button>
-
-                <button class = "button" name = "button2">
-                    <span class = "button_icon">
-                        <ion-icon name="pause-outline"></ion-icon>
-                    </span>
-                </button>
-
-                <button class = "button" name = "button3">
-                    <span class = "button_icon">
-                        <ion-icon name="play-skip-back-circle-outline"></ion-icon>
-                    </span>
-                </button>
-
-                <button class = "button" name = "button4">
-                    <span class = "button_icon">
-                        <ion-icon name="play-skip-forward-circle-outline"></ion-icon>
-                    </span>
-                </button>
-
-                <button class = "button" name = "button5">
-                    <span class = "button_icon">
-                        <ion-icon name="ellipse-outline"></ion-icon>
-                    </span>
-                </button>
-
             </div>
-        </div>
+
+            <div class = "content-table">
+                <div>
+                    <a href="https://www.cj-wade.com">
+                    <button class = "content-graph">
+                        <span class = "button_icon">
+                            <ion-icon name="megaphone-outline" size = "large"></ion-icon>
+                            
+                        </span>
+                    </button>
+                    </a>
+                    <button class = "content-graph">
         
-        <div id="record" data-tab-content>
-            <h1>Record</h1>
-            <p>Time to record!</p>
-            <div class = "container">
-                <button class = "button" name = "button0">
-                    <span class = "button_icon">
-                        <ion-icon name="play-outline"></ion-icon>
-                    </span>
-                </button>
-
-                <button class = "button" name = "button1">
-                    <span class = "button_icon">
-                        <ion-icon name="stop-outline"></ion-icon>
-                    </span>
-                </button>
-
-                <button class = "button" name = "button2">
-                    <span class = "button_icon">
-                        <ion-icon name="pause-outline"></ion-icon>
-                    </span>
-                </button>
-
-                <button class = "button" name = "button3">
-                    <span class = "button_icon">
-                        <ion-icon name="play-skip-back-circle-outline"></ion-icon>
-                    </span>
-                </button>
-
-                <button class = "button" name = "button4">
-                    <span class = "button_icon">
-                        <ion-icon name="play-skip-forward-circle-outline"></ion-icon>
-                    </span>
-                </button>
-
-                <button class = "button" name = "button5">
-                    <span class = "button_icon">
-                        <ion-icon name="ellipse-outline"></ion-icon>
-                    </span>
-                </button>
-
+                        <span class = "button_icon">
+                            <ion-icon name="refresh-outline" size = "large" rotation = "90"></ion-icon>
+                        </span>
+        
+                    </button>
+                    <button class = "content-graph">
+        
+                        <span class = "button_icon">
+                            <ion-icon name="square-outline" size = "large"></ion-icon>
+                        </span>
+        
+                    </button>
+                    <button class = "content-graph">
+        
+                        <span class = "button_icon">
+                            <ion-icon name="triangle-outline" size = "large"></ion-icon>
+                        </span>
+        
+                    </button>
+                    <button class = "content-graph">
+        
+                        <span class = "button_icon">
+                            <ion-icon name="close-circle-outline" size = "large"></ion-icon>
+                        </span>
+        
+                    </button>
+                    <button class = "content-graph">
+        
+                        <span class = "button_icon">
+                            <ion-icon name="close-circle-outline" size = "large"></ion-icon>
+                        </span>
+        
+                    </button>
+                    <button class = "content-graph">
+        
+                        <span class = "button_icon">
+                            <ion-icon name="close-circle-outline" size = "large"></ion-icon>
+                        </span>
+        
+                    </button>
+                    <button class = "content-graph">
+                        <span class = "button_icon">
+        
+                            <ion-icon name="close-circle-outline" size = "large"></ion-icon>
+                        </span>
+        
+                    </button>
+                    <button class = "content-graph">
+        
+                        <span class = "button_icon">
+                            <ion-icon name="close-circle-outline" size = "large"></ion-icon>
+                        </span>
+        
+                    </button>
+                </div>
+        
+                <table class = "content-voices">
+                    <h1>Editor</h1>
+                    <thead>
+                        <tr>
+                            <th>Notes</th>
+                            <th> Voice 1 </th>
+                            <th> Voice 2 </th>
+                            <th> Voice 3 </th>
+                            <th> Voice 4 </th>
+                            <th> Voice 5 </th>
+                            <th> Voice 6 </th>
+                            <th> Voice 7 </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>D</td>
+                            <td>E</td>
+                            <td>F</td>
+                            <td>G</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>C</td>
+                        </tr>
+                        <tr class = "active-row">
+                            <td>02</td>
+                            <td>D</td>
+                            <td>E</td>
+                            <td>F</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>E</td>
+                            <td>F</td>
+                            <td>G</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td>F</td>
+                            <td>G</td>
+                            <td>A</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>05</td>
+                            <td>G</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>06</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>C</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>07</td>
+                            <td>B</td>
+                            <td>C</td>
+                            <td>D</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>08</td>
+                            <td>C</td>
+                            <td>D</td>
+                            <td>E</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
             </div>
         </div>
         
         <div id="export" data-tab-content>
-            <h1>Export</h1>
-            <p>Show the world what you've done!</p>
+            <!--<h1>Export</h1>
+            <p>Show the world what you've done!</p>-->
             <div class = "container">
-                <button class = "button" name = "button0">
-                    <span class = "button_icon">
-                        <ion-icon name="play-outline"></ion-icon>
-                    </span>
-                </button>
-
-                <button class = "button" name = "button1">
-                    <span class = "button_icon">
-                        <ion-icon name="stop-outline"></ion-icon>
-                    </span>
-                </button>
-
-                <button class = "button" name = "button2">
-                    <span class = "button_icon">
-                        <ion-icon name="pause-outline"></ion-icon>
-                    </span>
-                </button>
-
-                <button class = "button" name = "button3">
-                    <span class = "button_icon">
-                        <ion-icon name="play-skip-back-circle-outline"></ion-icon>
-                    </span>
-                </button>
-
-                <button class = "button" name = "button4">
-                    <span class = "button_icon">
-                        <ion-icon name="play-skip-forward-circle-outline"></ion-icon>
-                    </span>
-                </button>
-
-                <button class = "button" name = "button5">
-                    <span class = "button_icon">
-                        <ion-icon name="ellipse-outline"></ion-icon>
-                    </span>
-                </button>
-
+                <div class = "file-download">
+                    <input class = "file-download__input" type="file" name = "myFile[]" id = "myFile"  multiple>
+                        <button class = "file-download__button" type = "button" id = "button1">
+                            <span class = "button_icon">
+                                <span class = "file-download__label">
+                                    <ion-icon name="cloud-download-outline"></ion-icon>
+                                </span>
+                            </span>
+                        </button>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class = "content-table">
-        <div>
-            <button class = "content-graph" name = "button6">
-                <span class = "button_icon">
-                    <ion-icon name="megaphone-outline" size = "large"></ion-icon>
-                </span>
-            </button>
-            <button class = "content-graph" name = "button7">
-
-                <span class = "button_icon">
-                    <ion-icon name="trending-up-outline" size = "large"></ion-icon>
-                </span>
-
-            </button>
-            <button class = "content-graph" name = "button8">
-
-                <span class = "button_icon">
-                    <ion-icon name="triangle-outline" size = "large"></ion-icon>
-                </span>
-
-            </button>
-            <button class = "content-graph" name = "button9">
-
-                <span class = "button_icon">
-                    <ion-icon name="analytics-outline" size = "large"></ion-icon>
-                </span>
-
-            </button>
-            <button class = "content-graph" name = "button10">
-
-                <span class = "button_icon">
-                    <ion-icon name="close-circle-outline" size = "large"></ion-icon>
-                </span>
-
-            </button>
-            <button class = "content-graph" name = "button11">
-
-                <span class = "button_icon">
-                    <ion-icon name="close-circle-outline" size = "large"></ion-icon>
-                </span>
-
-            </button>
-            <button class = "content-graph" name = "button12">
-
-                <span class = "button_icon">
-                    <ion-icon name="close-circle-outline" size = "large"></ion-icon>
-                </span>
-
-            </button>
-            <button class = "content-graph" name = "button13">
-                <span class = "button_icon">
-
-                    <ion-icon name="close-circle-outline" size = "large"></ion-icon>
-                </span>
-
-            </button>
-            <button class = "content-graph" name = "button14">
-
-                <span class = "button_icon">
-                    <ion-icon name="close-circle-outline" size = "large"></ion-icon>
-                </span>
-
-            </button>
-        </div>
-
-        <table class = "content-voices">
-            <thead>
-                <tr>
-                    <th>Notes</th>
-                    <th> Voice 1 </th>
-                    <th> Voice 2 </th>
-                    <th> Voice 3 </th>
-                    <th> Voice 4 </th>
-                    <th> Voice 5 </th>
-                    <th> Voice 6 </th>
-                    <th> Voice 7 </th>
-                    <th> Voice 8 </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>01</td>
-                    <td>C</td>
-                    <td>D</td>
-                    <td>E</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-                <tr class = "active-row">
-                    <td>02</td>
-                    <td>D</td>
-                    <td>E</td>
-                    <td>F</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-                <tr>
-                    <td>03</td>
-                    <td>E</td>
-                    <td>F</td>
-                    <td>G</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-                <tr>
-                    <td>04</td>
-                    <td>F</td>
-                    <td>G</td>
-                    <td>A</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-                <tr>
-                    <td>05</td>
-                    <td>G</td>
-                    <td>A</td>
-                    <td>B</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-                <tr>
-                    <td>06</td>
-                    <td>A</td>
-                    <td>B</td>
-                    <td>C</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-                <tr>
-                    <td>07</td>
-                    <td>B</td>
-                    <td>C</td>
-                    <td>D</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-                <tr>
-                    <td>08</td>
-                    <td>C</td>
-                    <td>D</td>
-                    <td>E</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-            </tbody>
-            
-        </table>
-    </div>
+    
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

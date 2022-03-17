@@ -98,3 +98,89 @@ Music tracker programs are built to generate sounds on computers. The user can s
 ## Business Opportunity
 
 In today's tracker market, most people would choose to use the venerable, modern, and free MilkyTracker, or a classic tracker offering, most likely hosted on a computer from the same era. If the flames of desire to release this project commercially cannot be extinguished, then either the feature-set must be unrivaled, or the user interface incredibly simple to understand, navigate, and use. Of course, that is only considering the release of the program as a stand alone product. Alternatively, the project could be released as a part of new digital audio workstation program, or as an extension to a preexisting one, such as Logic Pro or FLStudio.
+
+## List of Use Cases:
+
+### Make generated sample: 
+
+1. The <i>musician</i> will enter the sample editing suite by clicking the corresponding button.
+2. The system will display the sample editing suite and its tools.
+3. The <i>musician</i> will use the tools to create a sample from a sine, rectangle, or triangle wave.
+4. The <i>musician</i> will click the save button and the <i>system</i> will save the sample.
+
+### Make recorded sample: 
+
+1. The <i>musician</i> will record an instrument in another program.
+2. The <i>musician</i> will enter the sample editing suite by clicking the corresponding button.
+3. The <i>system</i> will display the sample editing suite and its tools.
+4. The <i>musician</i> will click on the button to open the import dialog.
+5. The <i>system</i> will open a dialog for the <i>musician</i> to select which recorded instrument to import.
+6. The <i>musician</i> will select the recorded instrument to be imported.
+7. The <i>system</i> will import the recorded instrument into the sample editing suite.
+8. The <i>musician</i> will use the tools to edit the recording.
+9. The <i>musician</i> will click the save button and will save the sample.
+
+### Play sound back: 
+
+1. The <i>musician</i> will click the play button.
+2. The <i>system</i> will search for the sound file.
+2a. If the <i>system</i> does not find the sound file, then the <i>system</i> will display an error message to the <i>musician</i>.
+2b. If the <i>system</i> does find the sound file, then the <i>system</i> will load the file.
+3. The <i>system</i> will play the file.
+
+### Export music: 
+
+1. The <i>musician</i> will click the export button.
+2. The <i>system</i> will display a dialog window to allow the <i>musician</i> to name the exported file, which file type to export the file as, and select which directory to export the file to.
+3. The <i>musician</i> will name the exported file and select a directory to export the file to.
+4a. If the name of the exported file is incorrect, then the <i>system</i> will display a dialog box informing the <i>musician</i> of the error.
+4b. If the name of the exported file is correct, then the <i>system</i> will export the file.
+
+
+
+
+
+## Supplementary specification: 
+
+Must perform checks for invalid file names during the export process in under 10 milliseconds or less.
+
+Complies with ADA requirements.
+
+Enable users to create their own graphical skins to replace the default color scheme.
+
+
+## Glossary:
+
+### Actors:
+
+The <i>musician</i> is the user of the program. As the program can be installed on a desktop operating system where a user can also be a system admin, the musician can be considered as such.
+
+The <i>system</i> is the catchall term when referring to the various processes that run when the <i>musician</i> interacts with the program’s graphical user interface.
+
+### Terms:
+
+* Tracker: A short hand way of referring to the type of program made to generate sound on vintage computers.
+
+* Windows: An operating system developed by Microsoft.
+
+* MacOS: An Unix-like operating system developed by Apple. Incorporates many technologies developed by NeXT, Inc.
+
+* Linux: A family of Unix-like operating systems engineered by many developers around the world. Incorporates the GNU software developed by Richard Stallman of the Free Software Foundation and the Linux kernel authored by Linus Torvalds.
+
+* JAVA: A programming language developed by James Gosling at the Oracle Corporation.
+
+* Electron: A framework that combines the Chromium browser’s rendering engine with the Node.js runtime, enabling developers to build desktop applications with HTML and CSS.
+
+* HTML: HyperText Markup Language. A language for writing web pages.
+
+* CSS: Cascading Style Sheets: A language for describing the appearance of web pages made in HTML.
+
+* Waveform: The shape of an electrical wave. The shape affects the way that the wave sounds.
+
+* Commodore: Out of business computer manufacturer. Most popular product was the Commodore 64 8-bit home computer released in the 1980s.
+
+## Data dictionary: 
+
+The exported music files should be saved with either the .mod or .xm extensions, fully conforming to the standards laid out in their respective definitions.
+
+The <i>MilkyTracker</i> project has expanded the documentation of the .xm format. It would be advantageous for this project’s implementation of the format to be in specification with the expanded documentation.

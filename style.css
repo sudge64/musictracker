@@ -16,11 +16,11 @@
   
   .tabs {
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px #7e7e7e;
   }
   
   .tab {
@@ -29,11 +29,11 @@
   }
   
   .tab.active {
-    background-color: #50b818;
+    background: #98ff98;
   }
   
   .tab:hover {
-    background-color: #98ff98;
+    background-color: #50b818;
   }
   
   .tab-content {
@@ -46,27 +46,25 @@
 }
 
 .button{
-    /*display: inline-flex;*/
-    height: 50px;
-    width: 50px;
-    padding: 20px;
-    background: #50b818;
+    margin-top: 10px;
+    justify-content: left;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    background: #98ff98;
     border: none;
     outline: none;
     border-radius: 5px;
     overflow: hidden;
-    /*font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 500;*/
     cursor: pointer;
 }
 
 .button:hover{
-    background: solid #98ff98;
+    background: #50b818;
 }
 
 .button.active{
-    background: solid #50b818;
+    background: #98ff98;
 }
 
 .content-voices{
@@ -81,8 +79,8 @@
 }
 
 .content-voices thead tr{
-    background-color: #50b818;
-    color: #FFFFFF;
+    background-color: #98ff98;
+    color: #7e7e7e;
     text-align: left;
     font-weight: bold;
 }
@@ -93,7 +91,7 @@
 }
 
 .content-voices tbody tr{
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px #7e7e7e;
 }
 
 .content-voices tbody tr:nth-of-type(even){
@@ -101,16 +99,16 @@
 }
 
 .content-voices tbody tr:last-of-type{
-    border-bottom: 2px solid #50b818;
+    border-bottom: 2px #98ff98;
 }
 
 .content-voices tbody tr.active-row{
     font-weight: bold;
-    color: #50b818;
+    color: #98ff98;
 }
 
 .content-voices tbody tr:hover{
-    color: #98ff98;
+    color: #50b818;
 }
 
 .content-table{
@@ -122,7 +120,7 @@
     height: 100px;
     width: 100px;
     padding: 20px;
-    background: #50b818;
+    background: #98ff98;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -130,8 +128,80 @@
     cursor: pointer;
 }
 
+.content-graph:hover{
+    background: #50b818;
+}
+
 .button_icon{
-    color:white;
+    color: #7e7e7e;
     height: 50px;
     width: 50px;
+}
+
+.file-upload__button{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    background: #98ff98;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.file-upload__button:hover{
+    background: #50b818;
+}
+
+.file-upload{
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.file-upload__input{
+    display: none;
+}
+
+.file-upload__label{
+    max-width: 250px;
+    font-size: 0.9em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.file-download__button{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    background: #98ff98;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.file-download__button:hover{
+    background: #50b818;
+}
+
+.file-download{
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.file-download__input{
+    display: none;
+}
+
+.file-download__label{
+    max-width: 250px;
+    font-size: 0.9em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
