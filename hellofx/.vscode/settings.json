@@ -1,0 +1,16 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Library/Application Support/Oracle/Java/javafx-sdk-18/lib/javafx-swt.jar",
+        "/Library/Application Support/Oracle/Java/javafx-sdk-18/lib/javafx.base.jar",
+        "/Library/Application Support/Oracle/Java/javafx-sdk-18/lib/javafx.controls.jar",
+        "/Library/Application Support/Oracle/Java/javafx-sdk-18/lib/javafx.fxml.jar",
+        "/Library/Application Support/Oracle/Java/javafx-sdk-18/lib/javafx.graphics.jar",
+        "/Library/Application Support/Oracle/Java/javafx-sdk-18/lib/javafx.media.jar",
+        "/Library/Application Support/Oracle/Java/javafx-sdk-18/lib/javafx.swing.jar",
+        "/Library/Application Support/Oracle/Java/javafx-sdk-18/lib/javafx.web.jar",
+        "/Library/Application Support/Oracle/Java/jfugue-5.0.9.jar"
+    ]
+}
