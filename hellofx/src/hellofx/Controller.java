@@ -218,13 +218,13 @@ public class Controller implements Initializable{
 
     ObservableList<tableValues> list = FXCollections.observableArrayList(
         new tableValues("1", "C", "D", "E", "F", "G", "A", "B", "C"),
-        new tableValues("2", "D", "E", "F", "fourTable", "fiveTable", "sixTable", "sevenTable", "eightTable"),
-        new tableValues("3", "oneTable", "twoTable", "threeTable", "fourTable", "fiveTable", "sixTable", "sevenTable", "eightTable"),
-        new tableValues("4", "oneTable", "twoTable", "threeTable", "fourTable", "fiveTable", "sixTable", "sevenTable", "eightTable"),
-        new tableValues("5", "oneTable", "twoTable", "threeTable", "fourTable", "fiveTable", "sixTable", "sevenTable", "eightTable"),
-        new tableValues("6", "oneTable", "twoTable", "threeTable", "fourTable", "fiveTable", "sixTable", "sevenTable", "eightTable"),
-        new tableValues("7", "oneTable", "twoTable", "threeTable", "fourTable", "fiveTable", "sixTable", "sevenTable", "eightTable"),
-        new tableValues("8", "oneTable", "twoTable", "threeTable", "fourTable", "fiveTable", "sixTable", "sevenTable", "eightTable")
+        new tableValues("2", "D", "E", "F", "G", "A", "B", "C", "D"),
+        new tableValues("3", "E", "F", "G", "A", "B", "C", "D", "E"),
+        new tableValues("4", "F", "G", "A", "B", "C", "D", "E", "F"),
+        new tableValues("5", "G", "A", "B", "C", "D", "E", "F", "G"),
+        new tableValues("6", "A", "B", "C", "D", "E", "F", "G", "A"),
+        new tableValues("7", "B", "C", "D", "E", "F", "G", "A", "B"),
+        new tableValues("8", "C", "D", "E", "F", "G", "A", "B", "C")
     );
 
     @Override
