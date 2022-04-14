@@ -1,52 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="root" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="root" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.Controller">
    <children>
-      <Label layoutX="624.0" layoutY="16.0" prefHeight="17.0" prefWidth="30.0" stylesheets="@styles.css" text="Title" />
-      <TabPane layoutX="16.0" layoutY="39.0" prefHeight="662.0" prefWidth="1248.0" styleClass="tabs" stylesheets="@styles.css" tabClosingPolicy="UNAVAILABLE">
+      <TabPane layoutX="16.0" layoutY="39.0" prefHeight="662.0" prefWidth="1248.0" styleClass="tabs" stylesheets="@styles.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0">
         <tabs>
           <Tab text="Tracker">
                <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField id="ifTitle" fx:id="tfTitle" layoutX="824.0" layoutY="107.0" prefHeight="26.0" prefWidth="103.0" />
-                        <Button fx:id="buttonPlay" layoutX="28.0" layoutY="47.0" mnemonicParsing="false" onAction="#buttonPlayClicked" stylesheets="@styles.css" text="▶" />
-                        <Button fx:id="buttonStop" layoutX="96.0" layoutY="47.0" mnemonicParsing="false" onAction="#buttonStopClicked" stylesheets="@styles.css" text="⏹" />
-                        <Button fx:id="buttonPause" layoutX="180.0" layoutY="48.0" mnemonicParsing="false" onAction="#buttonPauseClicked" stylesheets="@styles.css" text="⏸" />
-                        <Button fx:id="buttonBack" layoutX="256.0" layoutY="48.0" mnemonicParsing="false" onAction="#buttonBackClicked" stylesheets="@styles.css" text="◅" />
-                        <Button fx:id="buttonForward" layoutX="322.0" layoutY="47.0" mnemonicParsing="false" onAction="#buttonForwardClicked" stylesheets="@styles.css" text="▻" />
-                        <Button fx:id="buttonRecord" layoutX="397.0" layoutY="47.0" mnemonicParsing="false" onAction="#buttonRecordClicked" stylesheets="@styles.css" text="⏺" />
-                        <TableView layoutX="7.0" layoutY="146.0" prefHeight="479.0" prefWidth="1235.0" stylesheets="@styles.css">
+                        <Button fx:id="buttonPlay" layoutX="32.0" layoutY="46.0" mnemonicParsing="false" onAction="#buttonPlayClicked" stylesheets="@styles.css" text="▶" AnchorPane.leftAnchor="32.0" />
+                        <Button fx:id="buttonStop" layoutX="102.0" layoutY="46.0" mnemonicParsing="false" onAction="#buttonStopClicked" stylesheets="@styles.css" text="⏹" />
+                        <Button fx:id="buttonPause" layoutX="177.0" layoutY="46.0" mnemonicParsing="false" onAction="#buttonPauseClicked" stylesheets="@styles.css" text="⏸" />
+                        <Button fx:id="buttonBack" layoutX="251.0" layoutY="46.0" mnemonicParsing="false" onAction="#buttonBackClicked" stylesheets="@styles.css" text="←" />
+                        <Button fx:id="buttonForward" layoutX="328.0" layoutY="46.0" mnemonicParsing="false" onAction="#buttonForwardClicked" stylesheets="@styles.css" text="→" />
+                        <Button fx:id="buttonRecord" layoutX="403.0" layoutY="46.0" mnemonicParsing="false" onAction="#buttonRecordClicked" stylesheets="@styles.css" text="⏺" />
+                        <TableView fx:id="table" layoutX="43.0" layoutY="152.0" prefHeight="479.0" prefWidth="1235.0" stylesheets="@styles.css" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0">
                           <columns>
-                              <TableColumn prefWidth="75.0" text="Notes" />
-                            <TableColumn prefWidth="75.0" text="1" />
-                            <TableColumn prefWidth="75.0" text="2" />
-                              <TableColumn prefWidth="75.0" text="3" />
-                              <TableColumn prefWidth="75.0" text="4" />
-                              <TableColumn prefWidth="75.0" text="5" />
-                              <TableColumn prefWidth="75.0" text="6" />
-                              <TableColumn prefWidth="75.0" text="7" />
-                              <TableColumn prefWidth="75.0" text="8" />
+                              <TableColumn fx:id="notesTable" prefWidth="75.0" text="Notes" />
+                            <TableColumn fx:id="oneTable" prefWidth="75.0" text="1" />
+                            <TableColumn fx:id="twoTable" prefWidth="75.0" text="2" />
+                              <TableColumn fx:id="threeTable" prefWidth="75.0" text="3" />
+                              <TableColumn fx:id="fourTable" prefWidth="75.0" text="4" />
+                              <TableColumn fx:id="fiveTable" prefWidth="75.0" text="5" />
+                              <TableColumn fx:id="sixTable" prefWidth="75.0" text="6" />
+                              <TableColumn fx:id="sevenTable" prefWidth="75.0" text="7" />
+                              <TableColumn fx:id="eightTable" prefWidth="75.0" text="8" />
                           </columns>
                         </TableView>
-                        <Button fx:id="buttonMenu" layoutX="21.0" layoutY="104.0" mnemonicParsing="false" onAction="#buttonMenuClicked" text="☰" />
-                        <Button fx:id="button1" layoutX="100.0" layoutY="106.0" mnemonicParsing="false" onAction="#button1Clicked" text="ⓧ" />
-                        <Button fx:id="button2" layoutX="168.0" layoutY="104.0" mnemonicParsing="false" onAction="#button2Clicked" text="ⓧ" />
-                        <Button fx:id="button3" layoutX="242.0" layoutY="104.0" mnemonicParsing="false" onAction="#button3Clicked" text="ⓧ" />
-                        <Button fx:id="button4" layoutX="316.0" layoutY="104.0" mnemonicParsing="false" onAction="#button4Clicked" text="ⓧ" />
-                        <Button fx:id="button5" layoutX="392.0" layoutY="104.0" mnemonicParsing="false" onAction="#button5Clicked" text="ⓧ" />
-                        <Button fx:id="button6" layoutX="467.0" layoutY="104.0" mnemonicParsing="false" onAction="#button6Clicked" text="ⓧ" />
-                        <Button fx:id="button7" layoutX="542.0" layoutY="103.0" mnemonicParsing="false" onAction="#button7Clicked" text="ⓧ" />
-                        <Button fx:id="button8" layoutX="616.0" layoutY="103.0" mnemonicParsing="false" onAction="#button8Clicked" text="ⓧ" />
+                        <Button fx:id="buttonMenu" layoutX="31.0" layoutY="103.0" mnemonicParsing="false" onAction="#buttonMenuClicked" text="☰" />
+                        <Button fx:id="button1" layoutX="102.0" layoutY="103.0" mnemonicParsing="false" onAction="#button1Clicked" text="ⓧ" />
+                        <Button fx:id="button2" layoutX="177.0" layoutY="103.0" mnemonicParsing="false" onAction="#button2Clicked" text="ⓧ" />
+                        <Button fx:id="button3" layoutX="250.0" layoutY="103.0" mnemonicParsing="false" onAction="#button3Clicked" text="ⓧ" />
+                        <Button fx:id="button4" layoutX="327.0" layoutY="103.0" mnemonicParsing="false" onAction="#button4Clicked" text="ⓧ" />
+                        <Button fx:id="button5" layoutX="403.0" layoutY="103.0" mnemonicParsing="false" onAction="#button5Clicked" text="ⓧ" />
+                        <Button fx:id="button6" layoutX="477.0" layoutY="103.0" mnemonicParsing="false" onAction="#button6Clicked" text="ⓧ" />
+                        <Button fx:id="button7" layoutX="551.0" layoutY="103.0" mnemonicParsing="false" onAction="#button7Clicked" text="ⓧ" />
+                        <Button fx:id="button8" layoutX="630.0" layoutY="103.0" mnemonicParsing="false" onAction="#button8Clicked" text="ⓧ" />
                      </children>
                   </AnchorPane>
                </content>

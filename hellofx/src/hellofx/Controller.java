@@ -1,16 +1,25 @@
 package hellofx;
 
+import java.net.URL;
+import java.util.ResourceBundle;
+
 import org.jfugue.player.*;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-import javafx.stage.Stage;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
-public class Controller {
+
+public class Controller implements Initializable{
 
     Player player = new Player();
+
     @FXML
     private Button button1;
 
@@ -55,10 +64,37 @@ public class Controller {
 
     @FXML
     private Button buttonStop;
-    @FXML
-    private TextField tfTitle;
 
-    //static String[] signs;
+    @FXML
+    private TableView<tableValues> table;
+
+    @FXML
+    private TableColumn<tableValues, String> eightTable;
+
+    @FXML
+    private TableColumn<tableValues, String> fiveTable;
+
+    @FXML
+    private TableColumn<tableValues, String> fourTable;
+
+    @FXML
+    private TableColumn<tableValues, String> notesTable;
+
+    @FXML
+    private TableColumn<tableValues, String> oneTable;
+
+    @FXML
+    private TableColumn<tableValues, String> sevenTable;
+
+    @FXML
+    private TableColumn<tableValues, String> sixTable;
+
+    @FXML
+    private TableColumn<tableValues, String> threeTable;
+
+    @FXML
+    private TableColumn<tableValues, String> twoTable;
+
     static int i = 0;
     static int count = 0;
     static final int SIZE = 4;
@@ -166,10 +202,6 @@ public class Controller {
 
     @FXML
     void buttonPlayClicked(ActionEvent event) {
-        Stage mainWindow = (Stage) tfTitle.getScene().getWindow();
-
-        String title = tfTitle.getText();
-        mainWindow.setTitle(title);
 
         player.play("C D E F G A B C");
     }
@@ -184,4 +216,33 @@ public class Controller {
 
     }
 
+    ObservableList<tableValues> list = FXCollections.observableArrayList(
+        new tableValues("1", "C", "D", "E", "F", "G", "A", "B", "C"),
+        new tableValues("2", "D", "E", "F", "fourTable", "fiveTable", "sixTable", "sevenTable", "eightTable"),
+        new tableValues("3", "oneTable", "twoTable", "threeTable", "fourTable", "fiveTable", "sixTable", "sevenTable", "eightTable"),
+        new tableValues("4", "oneTable", "twoTable", "threeTable", "fourTable", "fiveTable", "sixTable", "sevenTable", "eightTable"),
+        new tableValues("5", "oneTable", "twoTable", "threeTable", "fourTable", "fiveTable", "sixTable", "sevenTable", "eightTable"),
+        new tableValues("6", "oneTable", "twoTable", "threeTable", "fourTable", "fiveTable", "sixTable", "sevenTable", "eightTable"),
+        new tableValues("7", "oneTable", "twoTable", "threeTable", "fourTable", "fiveTable", "sixTable", "sevenTable", "eightTable"),
+        new tableValues("8", "oneTable", "twoTable", "threeTable", "fourTable", "fiveTable", "sixTable", "sevenTable", "eightTable")
+    );
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        
+        notesTable.setCellValueFactory(new PropertyValueFactory<tableValues, String>("notesTable"));
+        oneTable.setCellValueFactory(new PropertyValueFactory<tableValues, String>("oneTable"));
+        twoTable.setCellValueFactory(new PropertyValueFactory<tableValues, String>("twoTable"));
+        threeTable.setCellValueFactory(new PropertyValueFactory<tableValues, String>("threeTable"));
+        fourTable.setCellValueFactory(new PropertyValueFactory<tableValues, String>("fourTable"));
+        fiveTable.setCellValueFactory(new PropertyValueFactory<tableValues, String>("fiveTable"));
+        sixTable.setCellValueFactory(new PropertyValueFactory<tableValues, String>("sixTable"));
+        sevenTable.setCellValueFactory(new PropertyValueFactory<tableValues, String>("sevenTable"));
+        eightTable.setCellValueFactory(new PropertyValueFactory<tableValues, String>("eightTable"));
+
+        table.setItems(list);
+        
+    }
+
 }
+

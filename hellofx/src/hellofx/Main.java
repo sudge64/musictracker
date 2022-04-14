@@ -2,6 +2,7 @@ package hellofx;
 
 import java.io.IOException;
 
+
 import org.jfugue.player.*;
 
 import javafx.application.Application;
@@ -24,6 +25,7 @@ public class Main extends Application {
             primaryStage.setTitle("Hello World");
             primaryStage.setScene(scene);
             primaryStage.show();
+            
             
             
         }
