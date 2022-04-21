@@ -29,36 +29,72 @@ public class tableValues {
         return notesTable;
     }
 
+    public void setNotesTable(String notesTable){
+        this.notesTable = notesTable;
+    }
+
     public String getOneTable(){
         return oneTable;
+    }
+
+    public void setOneTable(String oneTable){
+        this.oneTable = oneTable;
     }
 
     public String getTwoTable(){
         return twoTable;
     }
 
+    public void setTwoTable(String twoTable){
+        this.twoTable = twoTable;
+    }
+
     public String getThreeTable(){
         return threeTable;
+    }
+
+    public void setThreeTable(String threeTable){
+        this.threeTable = threeTable;
     }
 
     public String getFourTable(){
         return fourTable;
     }
 
+    public void setFourTable(String fourTable){
+        this.fourTable = fourTable;
+    }
+
     public String getFiveTable(){
         return fiveTable;
+    }
+
+    public void setFiveTable(String fiveTable){
+        this.fiveTable = fiveTable;
     }
 
     public String getSixTable(){
         return sixTable;
     }
 
+    public void setSixTable(String sixTable){
+        this.sixTable = sixTable;
+    }
+
     public String getSevenTable(){
         return sevenTable;
     }
 
+    public void setSevenTable(String sevenTable){
+        this.sevenTable = sevenTable;
+    }
+
     public String getEightTable(){
         return eightTable;
+    }
+    
+    public void setEightTable(String eightTable){
+        this.eightTable = eightTable;
     }
 
     public static void setItems(ObservableList<tableValues> list) {

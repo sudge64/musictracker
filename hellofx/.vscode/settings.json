@@ -3,14 +3,23 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "/Library/Application Support/Oracle/Java/javafx-sdk-18/lib/javafx-swt.jar",
-        "/Library/Application Support/Oracle/Java/javafx-sdk-18/lib/javafx.base.jar",
-        "/Library/Application Support/Oracle/Java/javafx-sdk-18/lib/javafx.controls.jar",
-        "/Library/Application Support/Oracle/Java/javafx-sdk-18/lib/javafx.fxml.jar",
-        "/Library/Application Support/Oracle/Java/javafx-sdk-18/lib/javafx.graphics.jar",
-        "/Library/Application Support/Oracle/Java/javafx-sdk-18/lib/javafx.media.jar",
-        "/Library/Application Support/Oracle/Java/javafx-sdk-18/lib/javafx.swing.jar",
-        "/Library/Application Support/Oracle/Java/javafx-sdk-18/lib/javafx.web.jar",
-        "/Library/Application Support/Oracle/Java/jfugue-5.0.9.jar"
+        "/Users/cjwade/Documents/projects/Lab 7/javafx-sdk-18 mac/lib/javafx-swt.jar",
+        "/Users/cjwade/Documents/projects/Lab 7/javafx-sdk-18 mac/lib/javafx.base.jar",
+        "/Users/cjwade/Documents/projects/Lab 7/javafx-sdk-18 mac/lib/javafx.controls.jar",
+        "/Users/cjwade/Documents/projects/Lab 7/javafx-sdk-18 mac/lib/javafx.fxml.jar",
+        "/Users/cjwade/Documents/projects/Lab 7/javafx-sdk-18 mac/lib/javafx.graphics.jar",
+        "/Users/cjwade/Documents/projects/Lab 7/javafx-sdk-18 mac/lib/javafx.media.jar",
+        "/Users/cjwade/Documents/projects/Lab 7/javafx-sdk-18 mac/lib/javafx.swing.jar",
+        "/Users/cjwade/Documents/projects/Lab 7/javafx-sdk-18 mac/lib/javafx.web.jar",
+        "/Users/cjwade/Documents/projects/Lab 7/jfugue-5.0.9.jar",
+        "/media/cjwade/wdred/myDocuments/DOCUMENTS/1_Tarleton/8th Semester Tarleton/COSC 3489/Labs/Lab 7/jfugue-5.0.9.jar",
+        "/media/cjwade/wdred/myDocuments/DOCUMENTS/1_Tarleton/8th Semester Tarleton/COSC 3489/Labs/Lab 6/javafx-sdk-18/lib/javafx.base.jar",
+        "/media/cjwade/wdred/myDocuments/DOCUMENTS/1_Tarleton/8th Semester Tarleton/COSC 3489/Labs/Lab 6/javafx-sdk-18/lib/javafx.controls.jar",
+        "/media/cjwade/wdred/myDocuments/DOCUMENTS/1_Tarleton/8th Semester Tarleton/COSC 3489/Labs/Lab 6/javafx-sdk-18/lib/javafx.fxml.jar",
+        "/media/cjwade/wdred/myDocuments/DOCUMENTS/1_Tarleton/8th Semester Tarleton/COSC 3489/Labs/Lab 6/javafx-sdk-18/lib/javafx.graphics.jar",
+        "/media/cjwade/wdred/myDocuments/DOCUMENTS/1_Tarleton/8th Semester Tarleton/COSC 3489/Labs/Lab 6/javafx-sdk-18/lib/javafx.media.jar",
+        "/media/cjwade/wdred/myDocuments/DOCUMENTS/1_Tarleton/8th Semester Tarleton/COSC 3489/Labs/Lab 6/javafx-sdk-18/lib/javafx.swing.jar",
+        "/media/cjwade/wdred/myDocuments/DOCUMENTS/1_Tarleton/8th Semester Tarleton/COSC 3489/Labs/Lab 6/javafx-sdk-18/lib/javafx.web.jar",
+        "/media/cjwade/wdred/myDocuments/DOCUMENTS/1_Tarleton/8th Semester Tarleton/COSC 3489/Labs/Lab 6/javafx-sdk-18/lib/javafx-swt.jar"
     ]
 }

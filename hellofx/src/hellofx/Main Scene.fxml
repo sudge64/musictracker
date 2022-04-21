@@ -24,14 +24,14 @@
                         <TableView fx:id="table" layoutX="43.0" layoutY="152.0" prefHeight="479.0" prefWidth="1235.0" stylesheets="@styles.css" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0">
                           <columns>
                               <TableColumn fx:id="notesTable" prefWidth="75.0" text="Notes" />
-                            <TableColumn fx:id="oneTable" prefWidth="75.0" text="1" />
-                            <TableColumn fx:id="twoTable" prefWidth="75.0" text="2" />
-                              <TableColumn fx:id="threeTable" prefWidth="75.0" text="3" />
-                              <TableColumn fx:id="fourTable" prefWidth="75.0" text="4" />
-                              <TableColumn fx:id="fiveTable" prefWidth="75.0" text="5" />
-                              <TableColumn fx:id="sixTable" prefWidth="75.0" text="6" />
-                              <TableColumn fx:id="sevenTable" prefWidth="75.0" text="7" />
-                              <TableColumn fx:id="eightTable" prefWidth="75.0" text="8" />
+                            <TableColumn fx:id="oneTable" prefWidth="75.0" text="Voice 1" />
+                            <TableColumn fx:id="twoTable" prefWidth="75.0" text="Voice 2" />
+                              <TableColumn fx:id="threeTable" prefWidth="75.0" text="Voice 3" />
+                              <TableColumn fx:id="fourTable" prefWidth="75.0" text="Voice 4" />
+                              <TableColumn fx:id="fiveTable" prefWidth="75.0" text="Voice 5" />
+                              <TableColumn fx:id="sixTable" prefWidth="75.0" text="Voice 6" />
+                              <TableColumn fx:id="sevenTable" prefWidth="75.0" text="Voice 7" />
+                              <TableColumn fx:id="eightTable" prefWidth="75.0" text="Voice 8" />
                           </columns>
                         </TableView>
                         <Button fx:id="buttonMenu" layoutX="31.0" layoutY="103.0" mnemonicParsing="false" onAction="#buttonMenuClicked" text="☰" />
